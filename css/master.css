@@ -17,7 +17,26 @@
     color: black;/* set the text color to black here */
     font-family: Georgia, "Times New Roman", serif;/* set the font here */
     text-align: center;/* set the text alignment here */
+    animation: fadeInUp 0.8s ease-out both;
    }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    body {
+      animation: none;
+    }
+  }
 
   footer {
     margin-top: 2rem;
